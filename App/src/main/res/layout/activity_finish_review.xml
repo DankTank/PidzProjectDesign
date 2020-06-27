@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinishReview">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:scaleType="fitXY" />
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/menu_ic_back"
+        android:onClick="funcGoBack"
+        android:tint="@color/colorSkyBlue"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/ic_arrow_back" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/menu_ic_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:id="@+id/ques_desc"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="Thank you for taking the time to write a review about [name]"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <LinearLayout
+            android:onClick="funcGotoMenu"
+            android:id="@+id/ll"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/shape_rec_filled"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/ic_green" />
+
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:text="WE SUCCESSFULLY RECEIVED YOUR REVIEW"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

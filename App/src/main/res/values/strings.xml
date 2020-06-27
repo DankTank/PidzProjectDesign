@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PidzProject</string>
+
+
+    <string name="ques_1">[name] has shown an active working attitude during the working period</string>
+    <string name="ques_2">[name] took initiative during the work period</string>
+    <string name="ques_3">[name] has collaborated &amp; and communicated with fellow staff members</string>
+    <string name="ques_4">[name] has shown that (s)he has experiencing in this working field</string>
+    <string name="ques_5">I would recommend [name] to other employers</string>
+</resources>
